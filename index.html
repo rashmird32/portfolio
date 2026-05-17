@@ -1,181 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
+    <div class="container">
 
-  <!-- LEFT SIDE -->
-  <aside class="sidebar">
-    <h1>Rashmi Deshpande</h1>
-    <p>Aspiring Frontend Developer</p>
+        <!-- LEFT SIDEBAR -->
+        <aside class="sidebar">
+            <h1>Rashmi</h1>
+            <h2>Frontend Developer</h2>
+            <p>I build clean and responsive web apps.</p>
 
-    <nav>
-      <a href="#about" class="nav-link">About</a>
-      <a href="#experience" class="nav-link">Experience</a>
-      <a href="#projects" class="nav-link">Projects</a>
-      
-    </nav>
+           
+            <nav class="side-nav">
 
-    <div class="social-sidebar">
-      <ul>
-        <li>
-          <a href="https://github.com/yourusername" target="_blank">
-            <i class="fab fa-github"></i>
-          </a>
-        </li>
-        <li>
-          <a href="https://linkedin.com/in/yourusername" target="_blank">
-            <i class="fab fa-linkedin-in"></i>
-          </a>
-        </li>
-        <li>
-          <a href="mailto:youremail@gmail.com">
-            <i class="fas fa-envelope"></i>
-          </a>
-        </li>
-      </ul>
+                <a href="#about" class="nav-link active">
+                    <span class="nav-indicator"></span>
+                    <span class="nav-text">ABOUT</span>
+                </a>
+
+                <a href="#experience" class="nav-link">
+                    <span class="nav-indicator"></span>
+                    <span class="nav-text">EXPERIENCE</span>
+                </a>
+
+                <a href="#projects" class="nav-link">
+                    <span class="nav-indicator"></span>
+                    <span class="nav-text">PROJECTS</span>
+                </a>
+
+                </nav>
+            <div class="social-sidebar">
+                
+                <ul>
+                    <li>
+                        <a href="https://github.com/rashmird32" target="_new">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/rashmi-deshpande-23a97214b/" target="_new">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:rashmird32@gmail.com">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- RIGHT CONTENT -->
+        <main class="content">
+
+            <section id="about">
+                <h2>About</h2>
+                <div class="about-section">
+                    <p>
+                        I’m a Full Stack Developer with <span class="highlight">3.8 years of experience</span> building and maintaining web applications. Previously at <span class="highlight">Aissel Technologies</span>, I worked across both frontend and backend development using technologies
+                        like HTML, CSS, JavaScript, PHP, Bootstrap, AJAX, and MySQL.
+                    </p>
+                    <p>
+                        After taking a planned career break due to family responsibilities and maternity, I’m now actively re-entering the workforce with a strong focus on modern frontend development. Currently, I’m working with <span class="highlight">HTML, CSS, JavaScript</span>,
+                        and learning <span class="highlight">React</span> while building hands-on projects to strengthen my practical skills.
+                    </p>
+                    <p>
+                        I’m also completing a <span class="highlight">30-day GitHub challenge</span>, consistently creating projects to improve problem-solving, consistency, and development workflow. Outside of coding, I enjoy drawing, art, and listening to music, which
+                        helps me stay creative and curious.
+                    </p>
+                </div>
+            </section>
+
+            <section id="experience">
+                <h2>Experience</h2>
+                <div class="experience-section card">
+
+                    <div class="experience-item">
+                        <div class="exp-date">2018 — 2022</div>
+
+                        <div class="exp-content">
+                            <h3>Full Stack Developer · Aissel Technologies</h3>
+
+                            <p>
+                                Developed and maintained responsive, user-focused web interfaces using HTML, CSS, Bootstrap, and JavaScript, ensuring consistency across devices. Built and optimized 8+ landing pages for marketing campaigns with a focus on performance and usability.
+                            </p>
+
+                            <p>
+                                Improved user experience by implementing AJAX-based dynamic content loading for faster and smoother interactions. Worked on backend development using PHP and CodeIgniter, ensuring seamless integration with frontend systems.
+                            </p>
+
+                            <p>
+                                Wrote and optimized MySQL queries to improve data handling efficiency and overall application performance.
+                            </p>
+
+                            <div class="tech-stack">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                                <span>Bootstrap</span>
+                                <span>AJAX</span>
+                                <span>PHP</span>
+                                <span>CodeIgniter</span>
+                                <span>MySQL</span>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                    <div class="resume">
+                        <!-- RESUME LINK -->
+                        <a href="resume.pdf" target="_blank" class="resume-link">View Full Resume ↗ </a>
+            
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section id="projects">
+                <h2>Projects</h2>
+
+                <div class="project-card">
+                    <img src="images/expense_tracker.png" alt="Expense Tracker">
+                    <div>
+                        <h3>Expense Tracker</h3>
+                        <p>A simple and efficient expense tracker that allows users to manage daily spending, categorize expenses, and track financial habits.</p>
+                        <p class="tech">HTML • CSS • JS</p>
+                        <div class="project-links">
+                            <a href="https://github.com/rashmird32/expense_tracker" target="_new">GitHub</a>
+                            <a href="https://expense-tracker-coral-phi-10.vercel.app/" target="_new">Live</a>
+                         </div>   
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="images/digital_agency.png" alt="Digital Agency">
+                    <div>
+                        <h3>Digital Agency</h3>
+                        <p>A modern responsive website for a digital agency showcasing services, portfolio, and contact features with clean UI design.</p>
+                        <p class="tech">HTML • CSS • JS</p>
+                        <div class="project-links">
+                            <a href="https://github.com/rashmird32/vj_digital_studio" target="_new">GitHub</a>
+                            <a href="https://vj-digital-studio.vercel.app/" target="_new">Live</a>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+        </main>
     </div>
-  </aside>
-
-  <!-- RIGHT SIDE -->
-  <main class="content">
-
-    <section id="about">
-      <div class="about-section">
-                <p>
-          I’m a Full Stack Developer with <span>3.8 years of experience</span> building and maintaining web applications. Previously at <span>Aissel Technologies</span>, I worked across both frontend and backend development using technologies like HTML, CSS, JavaScript, PHP, Bootstrap, AJAX, and MySQL.
-        </p>
-        <p>
-          After taking a planned career break due to family responsibilities and maternity, I’m now actively re-entering the workforce with a strong focus on modern frontend development. Currently, I’m working with <span>HTML, CSS, JavaScript</span>, and learning <span>React</span> while building hands-on projects to strengthen my practical skills.
-        </p>
-        <p>
-          I’m also completing a <span>30-day GitHub challenge</span>, consistently creating projects to improve problem-solving, consistency, and development workflow. Outside of coding, I enjoy drawing, art, and listening to music, which helps me stay creative and curious.
-        </p>
-    </div>
-    </section>
-
-    <section id="experience">
-      <div class="experience-section">
-
-  <div class="experience-item">
-    <div class="exp-date">2019 — 2023</div>
-
-    <div class="exp-content">
-      <h3>Full Stack Developer · Aissel Technologies</h3>
-
-      <p>
-        Developed and maintained responsive, user-focused web interfaces using HTML, CSS, Bootstrap, and JavaScript, ensuring consistency across devices. Built and optimized 8+ landing pages for marketing campaigns with a focus on performance and usability.
-      </p>
-
-      <p>
-        Improved user experience by implementing AJAX-based dynamic content loading for faster and smoother interactions. Worked on backend development using PHP and CodeIgniter, ensuring seamless integration with frontend systems.
-      </p>
-
-      <p>
-        Wrote and optimized MySQL queries to improve data handling efficiency and overall application performance.
-      </p>
-
-      <div class="tech-stack">
-        <span>HTML</span>
-        <span>CSS</span>
-        <span>JavaScript</span>
-        <span>Bootstrap</span>
-        <span>AJAX</span>
-        <span>PHP</span>
-        <span>CodeIgniter</span>
-        <span>MySQL</span>
-      </div>
-
-       
-    </div>
-    
-  </div>
-  <div class="resume">
-      <!-- RESUME LINK -->
-      <a href="resume.pdf" target="_blank" class="resume-link">
-        View Full Resume ↗
-      </a>
-    </div>
-
-</div>
-
-
-    </section>
-
-    <section class="projects" id="projects">
-  <h2 class="section-title">Some Things I’ve Built</h2>
-
-  <!-- Project 1 -->
-  <div class="project">
-    <div class="project-content">
-      <p class="project-overline">Featured Project</p>
-      <h3 class="project-title">Expense Tracker</h3>
-      
-      <div class="project-description">
-        <p>
-          A simple and efficient expense tracker that allows users to manage daily spending,
-          categorize expenses, and track financial habits.
-        </p>
-      </div>
-
-      <ul class="project-tech">
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-      </ul>
-
-      <div class="project-links">
-        <a href="https://github.com/rashmird32/expense_tracker" target="_blank"><button>GitHub</button></a>
-        <a href="https://expense-tracker-coral-phi-10.vercel.app/" target="_blank"><button>Live</button></a>
-      </div>
-    </div>
-
-    <div class="project-image">
-      <img src="images/expense_tracker.png" alt="Expense Tracker">
-    </div>
-  </div>
-
-  <!-- Project 2 -->
-  <div class="project reverse">
-    <div class="project-content">
-      <p class="project-overline">Featured Project</p>
-      <h3 class="project-title">Digital Agency Website</h3>
-      
-      <div class="project-description">
-        <p>
-          A modern responsive website for a digital agency showcasing services,
-          portfolio, and contact features with clean UI design.
-        </p>
-      </div>
-
-      <ul class="project-tech">
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>Bootstrap</li>
-      </ul>
-
-      <div class="project-links">
-        <a href="https://github.com/rashmird32/vj_digital_studio" target="_blank"><button>GitHub</button></a>
-        <a href="https://vj-digital-studio.vercel.app/" target="_blank"><button>Live</button></a>
-      </div>
-    </div>
-
-    <div class="project-image">
-      <img src="images/digital_agency.png" alt="Digital Agency">
-    </div>
-  </div>
-
-</section>
-
-  </main>
-
-  <script src="script.js"></script>
 </body>
+<script src="script.js"></script>
+
 </html>
